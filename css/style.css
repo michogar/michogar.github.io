@@ -481,6 +481,8 @@ a:hover {
 	height: 100%;
 }
 
+/* Map style*/
+
 .leaflet-control-zoom {
 	visibility: hidden;
 }
@@ -492,6 +494,15 @@ a:hover {
 footer {
 	background-color: #585757;
 	height: 40px;
+}
+
+img.leaflet-marker-icon.img-rounded {
+	border-color: #333333;
+	border-style: solid;
+	border-width: 8px;
+	-moz-box-shadow: 6px 6px 5px #888;
+	-webkit-box-shadow: 6px 6px 5px #888;
+	box-shadow: 6px 6px 5px #888;
 }
 
 
