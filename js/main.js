@@ -267,9 +267,25 @@ $(document).ready(function ($) {
     				data: $('#contact-form').serialize(),
     				dataType:"json",
     				success : function() {
+    					clearedForm()
+    					$("#submitButton").val('Send it!');
     				},
-    				error: function() { 				
+    				error: function() {
+    					clearedForm()
+    					$("#submitButton").val('Send it!');    					
     				}
     		});
     });
+    
+    $("#submitButton").on('mouseover', function(evt) {
+    	if ($("#submitButton").val() != 'Send Message') {
+    		$("#submitButton").val('Send Message');
+    	}
+    })
 });
+
+function clearedForm() {
+	$('#contact-form').each(function(){
+		this.reset();
+	})
+}
