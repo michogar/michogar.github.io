@@ -4,6 +4,8 @@ L.TileLayer.Common = L.TileLayer.extend({
 	}
 });
 
+var coords = {lat : 42.217712, lon:-8.737728};
+
 function initMap() {
 
 	map = new L.Map('map');
@@ -26,11 +28,14 @@ function initMap() {
 		 iconSize: [70, 70],
 		 className : 'img-rounded'
 	});
+	
+	$.ajax({
+	})
 
-	map.setView(new L.LatLng(43.16, -5.31),9);
+	map.setView(new L.LatLng(coords.lat, coords.lon),9);
 	map.addLayer(new L.TileLayer.MapQuestOpen());
 	
-	var marker = new L.marker([43.16, -5.31], 
+	var marker = new L.marker([coords.lat, coords.lon], 
 		{
 			icon: myIcon,
 			clickable : true,
