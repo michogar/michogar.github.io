@@ -259,6 +259,17 @@ $(document).ready(function ($) {
 										        }
 									        );    
     
-
-
+    // Send Mail
+    $("#submitButton").click( function(evt) {
+    		$.ajax({
+    			   url: 'http://sendmail.michogarcia.org/sendmail/mail', 
+    				type: 'POST',
+    				data: $('#contact-form').serialize(),
+    				dataType:"json",
+    				success : function() {
+    				},
+    				error: function() { 				
+    				}
+    		});
+    });
 });
