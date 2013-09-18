@@ -282,6 +282,13 @@ $(document).ready(function ($) {
     		$("#submitButton").val('Send Message');
     	}
     })
+    
+    // Change images on Hover
+    $(".social-image").hover(function(evt) {
+    	$(this).attr('src',$(this).attr('src').replace('color','gray'));
+    }, function(evt) {
+    	$(this).attr('src',$(this).attr('src').replace('gray','color'));
+    })
 });
 
 function clearedForm() {

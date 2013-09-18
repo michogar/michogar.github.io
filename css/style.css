@@ -481,6 +481,10 @@ a:hover {
 	height: 100%;
 }
 
+#social {
+	text-align: center;
+}
+
 /* Map style*/
 
 .leaflet-control-zoom {
