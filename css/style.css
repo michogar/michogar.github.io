@@ -52,6 +52,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.btn-inverse:hover {
+	background-color: #001FFF;
+}
+
 
 /* Navigation */
 
@@ -65,7 +69,7 @@ a:hover {
 }
 
 #sidebar {
-	background-color: #808080;
+	background-color: #70FF4C;
     height: 120%;
     padding: 0;
     position: fixed;
@@ -269,7 +273,7 @@ a:hover {
 }
 
 .btn-inverse {
-	background: none #B8B8B8;
+	background: none #FF9644;
     color: #F1F1F1;
     margin-top: 25px;
 }
@@ -404,14 +408,14 @@ a:hover {
 
 #section3 .content img {
 	max-width: 96%;
-	/*padding: 2%;*/
-	background-color: #F1F1F1;
+	padding: 3%;
+	background-color: #FF00B8;
 }
 
 /* Section 4 */
 
 #section4 {
-	background:#5C5C5C;
+	background:#6BFF70;
 	color: #F1F1F1;
 	padding-bottom: 0px;
 }
@@ -559,12 +563,12 @@ footer {
 }
 
 img.leaflet-marker-icon.img-rounded {
-	border-color: #333333;
+	border-color: #8D8888;
 	border-style: solid;
-	border-width: 8px;
-	-moz-box-shadow: 6px 6px 5px #888;
+	border-width: 1px;
+	/*-moz-box-shadow: 6px 6px 5px #888;
 	-webkit-box-shadow: 6px 6px 5px #888;
-	box-shadow: 6px 6px 5px #888;
+	box-shadow: 6px 6px 5px #888;*/
 }
 
 
